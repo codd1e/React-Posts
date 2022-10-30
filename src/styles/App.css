@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .App {
     width: 800px;
@@ -8,7 +9,8 @@
 
 #root{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .post {
@@ -18,6 +20,10 @@
     justify-content: space-between;
     margin-top: 15px;
     align-items: center;
+}
+
+.post__btns {
+    display: flex;
 }
 
 .post-enter {
@@ -52,3 +58,17 @@
     border: 2px solid orange;
     font-weight: bold;
 }
+
+.navbar{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: lightgray;
+}
+
+.navbar__links {
+    margin-left: auto;
+}
+
