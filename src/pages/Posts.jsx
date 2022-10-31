@@ -30,11 +30,12 @@ function Posts() {
     })
 
     const createPost = (newPost) => {
-        setPosts([...posts, newPost])
+        setPosts([...posts, newPost]);
+        setModal(false);
     }
 
     useEffect(() => {
-        fetchPosts()
+        fetchPosts();
     }, [page])
 
     const removePost = (post) => {
@@ -43,7 +44,7 @@ function Posts() {
 
     const changePage = (page) => {
         setPage(page);
-        fetchPosts(limit, page)
+        fetchPosts(limit, page);
     }
 
     return (
